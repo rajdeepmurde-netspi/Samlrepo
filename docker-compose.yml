@@ -15,7 +15,7 @@ services:
       context: ./sp
       dockerfile: ./public/Dockerfile
     ports:
-      - "8000:80"
+      - "8000:81"
     networks:
       - saml-net
     depends_on:
