@@ -4,6 +4,7 @@ services:
   idp:
     build:
       context: ./idp
+      dockerfile:Dockerfile
     ports:
       - "8001:80"
     networks:
@@ -12,6 +13,7 @@ services:
   sp:
     build:
       context: ./sp
+      dockerfile:Dockerfile
     ports:
       - "8000:80"
     networks:
